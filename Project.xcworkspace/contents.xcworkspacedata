@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:common/configuration"
+      name = "Configuration">
+      <FileRef
+         location = "group:Common-CompilerAndLanguage.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Common-HeadersAndFrameworks.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Common-SDKAndDeviceSupport.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Common-WarningsAndDiagnostics.xcconfig">
+      </FileRef>
+      <Group
+         location = "group:"
+         name = "Project">
+         <FileRef
+            location = "group:Common-Debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Common-Release.xcconfig">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:apps/iosapp/iosapp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:common/StaticLib/StaticLib.xcodeproj">
+   </FileRef>
+</Workspace>

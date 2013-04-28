@@ -1,0 +1,28 @@
+
+#include "Common-SDKAndDeviceSupport.xcconfig"
+#include "Common-CompilerAndLanguage.xcconfig"
+#include "Common-WarningsAndDiagnostics.xcconfig"
+#include "Common-HeadersAndFrameworks.xcconfig"
+
+// Override here for Debug Configurations
+
+CODE_SIGN_IDENTITY = iPhone Developer
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
+
+COPY_PHASE_STRIP = NO
+STRIP_INSTALLED_PRODUCT = NO
+VALIDATE_PRODUCT = NO
+PREBINDING = NO
+
+GCC_DYNAMIC_NO_PIC = NO
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+ONLY_ACTIVE_ARCH = YES
+
+OTHER_CFLAGS = $(JCMM_DIAGNOSTIC_FLAGS)
+
+//TODO: Code Coverage
+//GCC_GENERATE_TEST_COVERAGE_FILES = YES
+//GCC_INSTRUMENT_PROGRAM_FLOW = YES

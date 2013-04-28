@@ -1,0 +1,11 @@
+//Compiler settings
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+GCC_C_LANGUAGE_STANDARD = gnu99
+
+// Optimise code by making more aggressive assumptions about whether pointers can point to the same objects as other pointers - (ping @orj)
+GCC_STRICT_ALIASING = YES
+
+PRECOMPILE_PREFIX_HEADER = YES
+GCC_PRECOMPILE_PREFIX_HEADER = $(PRECOMPILE_PREFIX_HEADER)
+
+CLANG_ENABLE_OBJC_ARC = YES

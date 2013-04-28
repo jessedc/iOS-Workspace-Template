@@ -1,0 +1,9 @@
+
+JCMM_LIBSROOT = $(SRCROOT)/../../lib
+
+FRAMEWORK_SEARCH_PATHS = $(inherited)
+HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/../../common/StaticLib/src
+
+LIBRARY_SEARCH_PATHS = $(inherited)
+
+OTHER_LDFLAGS = $(inherited)

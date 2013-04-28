@@ -1,0 +1,11 @@
+
+ALWAYS_SEARCH_USER_PATHS = NO
+
+HEADER_SEARCH_PATHS = $(BUILT_PRODUCTS_DIR)
+
+LIBRARY_SEARCH_PATHS = $(BUILT_PRODUCTS_DIR)
+
+// Put the default Framework locations in the framework search paths
+FRAMEWORK_SEARCH_PATHS = $(SDKROOT)/Developer/Library/Frameworks $(DEVELOPER_LIBRARY_DIR)/Frameworks
+
+OTHER_LDFLAGS = -ObjC -framework Foundation -framework CoreGraphics -framework UIKit

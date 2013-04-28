@@ -1,0 +1,4 @@
+
+#include "Shared.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEVELOPMENT_BUILD=1

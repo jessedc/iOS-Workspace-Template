@@ -1,0 +1,4 @@
+
+#include "../../common/configuration/Common-Release.xcconfig"
+
+//HOCKEY_APP_ID =

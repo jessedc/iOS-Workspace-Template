@@ -8,4 +8,5 @@ ARCHS[sdk=iphoneos*] = armv7 armv7s
 ARCHS[sdk=iphonesimulator] = i386
 
 // Avoid THUMB code generation bugs (in LLVM) - (ping @orj)
+// http://gamesfromwithin.com/break-that-thumb-for-best-iphone-performance
 GCC_THUMB_SUPPORT = NO

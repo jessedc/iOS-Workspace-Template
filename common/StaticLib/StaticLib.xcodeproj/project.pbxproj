@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		883A27F7168109FA00F2AD59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883A27D7168109C900F2AD59 /* Foundation.framework */; };
-		883A281016810B3600F2AD59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883A27D5168109C900F2AD59 /* UIKit.framework */; };
-		883A281116810B3A00F2AD59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883A27D9168109C900F2AD59 /* CoreGraphics.framework */; };
 		883A285816810FE900F2AD59 /* StaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 883A285716810FE900F2AD59 /* StaticLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		883A28CF1681140100F2AD59 /* StaticLibObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 883A28CD1681140100F2AD59 /* StaticLibObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		883A28D01681140100F2AD59 /* StaticLibObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A28CE1681140100F2AD59 /* StaticLibObject.m */; };
@@ -28,9 +25,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		883A27D5168109C900F2AD59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		883A27D7168109C900F2AD59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		883A27D9168109C900F2AD59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		883A27F6168109FA00F2AD59 /* libStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		883A27FA168109FA00F2AD59 /* StaticLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLib-Prefix.pch"; sourceTree = "<group>"; };
 		883A281416810BFF00F2AD59 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -48,9 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883A281116810B3A00F2AD59 /* CoreGraphics.framework in Frameworks */,
-				883A281016810B3600F2AD59 /* UIKit.framework in Frameworks */,
-				883A27F7168109FA00F2AD59 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +53,8 @@
 			children = (
 				883A285716810FE900F2AD59 /* StaticLib.h */,
 				883A280E16810B0A00F2AD59 /* Source */,
-				883A280D16810B0000F2AD59 /* Configuration */,
 				883A27F9168109FA00F2AD59 /* Resources */,
-				883A27D4168109C900F2AD59 /* Frameworks */,
+				883A280D16810B0000F2AD59 /* Configuration */,
 				883A27D2168109C900F2AD59 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,16 +65,6 @@
 				883A27F6168109FA00F2AD59 /* libStaticLib.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		883A27D4168109C900F2AD59 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				883A27D5168109C900F2AD59 /* UIKit.framework */,
-				883A27D7168109C900F2AD59 /* Foundation.framework */,
-				883A27D9168109C900F2AD59 /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		883A27F9168109FA00F2AD59 /* Resources */ = {
@@ -99,8 +79,8 @@
 		883A280D16810B0000F2AD59 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				883A281316810B4F00F2AD59 /* project */,
-				883A281216810B4200F2AD59 /* target */,
+				883A281316810B4F00F2AD59 /* Project */,
+				883A281216810B4200F2AD59 /* Target */,
 			);
 			name = Configuration;
 			path = configuration;
@@ -116,23 +96,23 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		883A281216810B4200F2AD59 /* target */ = {
+		883A281216810B4200F2AD59 /* Target */ = {
 			isa = PBXGroup;
 			children = (
 				883A281516810BFF00F2AD59 /* HeadersAndLibraries.xcconfig */,
 				883A281716810BFF00F2AD59 /* Shared.xcconfig */,
 				883A281816810BFF00F2AD59 /* StaticLib.xcconfig */,
 			);
-			name = target;
+			name = Target;
 			sourceTree = "<group>";
 		};
-		883A281316810B4F00F2AD59 /* project */ = {
+		883A281316810B4F00F2AD59 /* Project */ = {
 			isa = PBXGroup;
 			children = (
 				883A281416810BFF00F2AD59 /* Debug.xcconfig */,
 				883A281616810BFF00F2AD59 /* Release.xcconfig */,
 			);
-			name = project;
+			name = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

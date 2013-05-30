@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		883A288E1681126800F2AD59 /* libStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 883A288D1681126800F2AD59 /* libStaticLib.a */; };
+		8808180F1757266B00F7DC20 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8808180E1757266B00F7DC20 /* MainStoryboard.storyboard */; };
+		880818121757273000F7DC20 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880818111757273000F7DC20 /* RootViewController.m */; };
 		88D0F45D16549D730038821E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88D0F45B16549D730038821E /* InfoPlist.strings */; };
 		88D0F45F16549D730038821E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0F45E16549D730038821E /* main.m */; };
 		88D0F46316549D730038821E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0F46216549D730038821E /* AppDelegate.m */; };
@@ -30,8 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880818051757256D00F7DC20 /* StaticLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StaticLib.xcodeproj; path = ../../common/StaticLib/StaticLib.xcodeproj; sourceTree = "<group>"; };
+		8808180E1757266B00F7DC20 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		880818101757273000F7DC20 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		880818111757273000F7DC20 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		883A27BA1680D8CC00F2AD59 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
-		883A288D1681126800F2AD59 /* libStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStaticLib.a; path = "../../common/StaticLib/build/Release-iphoneos/libStaticLib.a"; sourceTree = "<group>"; };
 		88D0F44E16549D730038821E /* iOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D0F45A16549D730038821E /* iOSProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSProject-Info.plist"; sourceTree = "<group>"; };
 		88D0F45C16549D730038821E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -60,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883A288E1681126800F2AD59 /* libStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +78,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		883A28591681118500F2AD59 /* Lib */ = {
+		88081814175728BC00F7DC20 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				880818051757256D00F7DC20 /* StaticLib.xcodeproj */,
 			);
-			name = Lib;
-			path = ../../lib;
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 		88D0F44316549D730038821E = {
@@ -90,7 +93,7 @@
 				88D0F45916549D730038821E /* Resources */,
 				88D0F4901654A0220038821E /* Configuration */,
 				88D0F47616549D730038821E /* Tests */,
-				883A28591681118500F2AD59 /* Lib */,
+				88081814175728BC00F7DC20 /* Vendor */,
 				88D0F45116549D730038821E /* Frameworks */,
 				88D0F44F16549D730038821E /* Products */,
 			);
@@ -108,7 +111,6 @@
 		88D0F45116549D730038821E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				883A288D1681126800F2AD59 /* libStaticLib.a */,
 				88D0F47016549D730038821E /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -119,6 +121,9 @@
 			children = (
 				88D0F46116549D730038821E /* AppDelegate.h */,
 				88D0F46216549D730038821E /* AppDelegate.m */,
+				8808180E1757266B00F7DC20 /* MainStoryboard.storyboard */,
+				880818101757273000F7DC20 /* RootViewController.h */,
+				880818111757273000F7DC20 /* RootViewController.m */,
 			);
 			name = Source;
 			path = src;
@@ -264,6 +269,7 @@
 				88D0F46516549D730038821E /* Default.png in Resources */,
 				88D0F46716549D730038821E /* Default@2x.png in Resources */,
 				88D0F46916549D730038821E /* Default-568h@2x.png in Resources */,
+				8808180F1757266B00F7DC20 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 			files = (
 				88D0F45F16549D730038821E /* main.m in Sources */,
 				88D0F46316549D730038821E /* AppDelegate.m in Sources */,
+				880818121757273000F7DC20 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

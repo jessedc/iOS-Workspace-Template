@@ -28,6 +28,27 @@
 			remoteGlobalIDString = 88D0F44D16549D730038821E;
 			remoteInfo = iOSProject;
 		};
+		88DFD1C3175733750022F135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880818051757256D00F7DC20 /* StaticLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 883A27F6168109FA00F2AD59;
+			remoteInfo = StaticLib;
+		};
+		88DFD1C5175733750022F135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880818051757256D00F7DC20 /* StaticLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8808181A17572BBA00F7DC20;
+			remoteInfo = StaticLibTests;
+		};
+		88DFD1C7175733750022F135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880818051757256D00F7DC20 /* StaticLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8808185417572D9900F7DC20;
+			remoteInfo = StaticLibTestLoader;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +215,16 @@
 			name = Project;
 			sourceTree = "<group>";
 		};
+		88DFD1BE175733750022F135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88DFD1C4175733750022F135 /* libStaticLib.a */,
+				88DFD1C6175733750022F135 /* StaticLibTests.octest */,
+				88DFD1C8175733750022F135 /* StaticLibTestLoader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +283,12 @@
 			mainGroup = 88D0F44316549D730038821E;
 			productRefGroup = 88D0F44F16549D730038821E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 88DFD1BE175733750022F135 /* Products */;
+					ProjectRef = 880818051757256D00F7DC20 /* StaticLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88D0F44D16549D730038821E /* iOSProject */,
@@ -259,6 +296,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		88DFD1C4175733750022F135 /* libStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStaticLib.a;
+			remoteRef = 88DFD1C3175733750022F135 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88DFD1C6175733750022F135 /* StaticLibTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StaticLibTests.octest;
+			remoteRef = 88DFD1C5175733750022F135 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88DFD1C8175733750022F135 /* StaticLibTestLoader.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = StaticLibTestLoader.app;
+			remoteRef = 88DFD1C7175733750022F135 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		88D0F44C16549D730038821E /* Resources */ = {

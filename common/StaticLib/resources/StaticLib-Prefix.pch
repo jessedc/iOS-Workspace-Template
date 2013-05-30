@@ -2,4 +2,10 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+
+#if defined(UNIT_TESTS) && UNIT_TESTS
+    #import <SenTestingKit/SenTestingKit.h>
+    #import <Kiwi/Kiwi.h>
+#endif
+
 #endif

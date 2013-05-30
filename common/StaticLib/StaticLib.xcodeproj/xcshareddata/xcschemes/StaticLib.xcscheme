@@ -20,6 +20,34 @@
                ReferencedContainer = "container:StaticLib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8808181917572BBA00F7DC20"
+               BuildableName = "StaticLibTests.octest"
+               BlueprintName = "StaticLibTests"
+               ReferencedContainer = "container:StaticLib.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8808185317572D9900F7DC20"
+               BuildableName = "StaticLibTestLoader.app"
+               BlueprintName = "StaticLibTestLoader"
+               ReferencedContainer = "container:StaticLib.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +56,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8808181917572BBA00F7DC20"
+               BuildableName = "StaticLibTests.octest"
+               BlueprintName = "StaticLibTests"
+               ReferencedContainer = "container:StaticLib.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

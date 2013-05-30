@@ -1,0 +1,13 @@
+JCMM_UNITTEST_HEADER_SEARCH_PATHS = $(SRCROOT)/../../lib/Kiwi
+JCMM_UNITTEST_PREPROCESSOR_DEFINITIONS = UNIT_TESTS=1
+
+#include "Shared.xcconfig"
+
+OTHER_LDFLAGS = $(inherited) -framework SenTestingKit
+
+PRODUCT_NAME = $(TARGET_NAME)
+WRAPPER_EXTENSION = octest
+INFOPLIST_FILE = resources/$(TARGET_NAME)-Info.plist
+BUNDLE_LOADER =  $(BUILT_PRODUCTS_DIR)/StaticLibTestLoader.app/StaticLibTestLoader
+TEST_HOST = $(BUNDLE_LOADER)
+TEST_AFTER_BUILD = NO

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFFB41AA-1620-4920-82FC-E0DFEFA8C325</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5E10BD56-AEC9-4CC6-BD41-14F7E88A92D7</key>
+		<string>ssh://github.com/jessedc/iOS-Workspace-Template.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5E10BD56-AEC9-4CC6-BD41-14F7E88A92D7</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jessedc/iOS-Workspace-Template.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5E10BD56-AEC9-4CC6-BD41-14F7E88A92D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5E10BD56-AEC9-4CC6-BD41-14F7E88A92D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Workspace-Template</string>
+		</dict>
+	</array>
+</dict>
+</plist>

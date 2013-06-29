@@ -1,0 +1,24 @@
+
+#include "Common-SDKAndDeviceSupport.xcconfig"
+#include "Common-CompilerAndLanguage.xcconfig"
+#include "Common-WarningsAndDiagnostics.xcconfig"
+#include "Common-HeadersAndFrameworks.xcconfig"
+
+//TODO: Releae codesigning identities
+//CODE_SIGN_IDENTITY = iPhone Distribution:
+//CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution:
+
+// Override here for Release Configurations
+
+COPY_PHASE_STRIP = YES
+STRIP_INSTALLED_PRODUCT = YES
+VALIDATE_PRODUCT = YES
+
+GCC_DYNAMIC_NO_PIC = NO
+GCC_OPTIMIZATION_LEVEL = s
+GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS=1
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+ONLY_ACTIVE_ARCH = NO
+
+OTHER_CFLAGS = $(JCMM_DIAGNOSTIC_FLAGS)

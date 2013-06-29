@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8808185717572D9900F7DC20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808185617572D9900F7DC20 /* UIKit.framework */; };
+		8808185917572D9900F7DC20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808185817572D9900F7DC20 /* Foundation.framework */; };
+		8808185B17572D9900F7DC20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808185A17572D9900F7DC20 /* CoreGraphics.framework */; };
+		8808187417572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808187217572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m */; };
+		8808187517572F3900F7DC20 /* StaticLibTestLoaderMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808187317572F3900F7DC20 /* StaticLibTestLoaderMain.m */; };
+		8808187C17572F6000F7DC20 /* StaticLibTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808187B17572F6000F7DC20 /* StaticLibTestSpec.m */; };
+		883A285816810FE900F2AD59 /* StaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 883A285716810FE900F2AD59 /* StaticLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		883A28CF1681140100F2AD59 /* StaticLibObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 883A28CD1681140100F2AD59 /* StaticLibObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		883A28D01681140100F2AD59 /* StaticLibObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A28CE1681140100F2AD59 /* StaticLibObject.m */; };
+		88724938177E750C009EB8CB /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88724931177E74CA009EB8CB /* libKiwi.a */; };
+		88ECE6C51757365E0024256F /* libStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 883A27F6168109FA00F2AD59 /* libStaticLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88724930177E74CA009EB8CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		88724932177E74CA009EB8CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C83C7157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		88724934177E74CA009EB8CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		88724936177E74F3009EB8CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5015B9E11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		88ECE6C3175736500024256F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 883A27C8168109C800F2AD59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8808185317572D9900F7DC20;
+			remoteInfo = StaticLibTestLoader;
+		};
+		88ECE6C6175736640024256F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 883A27C8168109C800F2AD59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 883A27F5168109FA00F2AD59;
+			remoteInfo = StaticLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8808181A17572BBA00F7DC20 /* StaticLibTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaticLibTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8808183017572C8900F7DC20 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = ../lib/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		8808183D17572D2700F7DC20 /* StaticLibTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibTests.xcconfig; sourceTree = "<group>"; };
+		8808185417572D9900F7DC20 /* StaticLibTestLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticLibTestLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8808185617572D9900F7DC20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8808185817572D9900F7DC20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8808185A17572D9900F7DC20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8808187117572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticLibTestLoaderAppDelegate.h; path = resources/StaticLibTestLoaderAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		8808187217572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticLibTestLoaderAppDelegate.m; path = resources/StaticLibTestLoaderAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		8808187317572F3900F7DC20 /* StaticLibTestLoaderMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticLibTestLoaderMain.m; path = resources/StaticLibTestLoaderMain.m; sourceTree = SOURCE_ROOT; };
+		8808187617572F5000F7DC20 /* StaticLibTestLoader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "StaticLibTestLoader-Info.plist"; path = "resources/StaticLibTestLoader-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8808187817572F5000F7DC20 /* StaticLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "StaticLibTests-Info.plist"; path = "resources/StaticLibTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8808187B17572F6000F7DC20 /* StaticLibTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticLibTestSpec.m; path = tests/StaticLibTestSpec.m; sourceTree = SOURCE_ROOT; };
+		8808187E17572F8900F7DC20 /* StaticLibTestLoader.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibTestLoader.xcconfig; sourceTree = "<group>"; };
+		883A27F6168109FA00F2AD59 /* libStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		883A27FA168109FA00F2AD59 /* StaticLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLib-Prefix.pch"; sourceTree = "<group>"; };
+		883A281416810BFF00F2AD59 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		883A281616810BFF00F2AD59 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		883A281716810BFF00F2AD59 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		883A281816810BFF00F2AD59 /* StaticLib.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLib.xcconfig; sourceTree = "<group>"; };
+		883A285716810FE900F2AD59 /* StaticLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticLib.h; path = src/StaticLib.h; sourceTree = "<group>"; };
+		883A28CD1681140100F2AD59 /* StaticLibObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticLibObject.h; sourceTree = "<group>"; };
+		883A28CE1681140100F2AD59 /* StaticLibObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticLibObject.m; sourceTree = "<group>"; };
+		88724928177E72CF009EB8CB /* StaticLibTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StaticLibTests-Prefix.pch"; path = "tests/StaticLibTests-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8808181617572BBA00F7DC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECE6C51757365E0024256F /* libStaticLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8808185117572D9900F7DC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8808185717572D9900F7DC20 /* UIKit.framework in Frameworks */,
+				8808185917572D9900F7DC20 /* Foundation.framework in Frameworks */,
+				8808185B17572D9900F7DC20 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883A27F3168109FA00F2AD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88724938177E750C009EB8CB /* libKiwi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8808182217572BBA00F7DC20 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8808187B17572F6000F7DC20 /* StaticLibTestSpec.m */,
+				8808187D17572F6C00F7DC20 /* Resources */,
+			);
+			name = Tests;
+			path = tests;
+			sourceTree = "<group>";
+		};
+		8808182F17572C7200F7DC20 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8808183017572C8900F7DC20 /* Kiwi.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		8808185517572D9900F7DC20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8808185617572D9900F7DC20 /* UIKit.framework */,
+				8808185817572D9900F7DC20 /* Foundation.framework */,
+				8808185A17572D9900F7DC20 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8808185C17572D9900F7DC20 /* TestLoader */ = {
+			isa = PBXGroup;
+			children = (
+				8808187617572F5000F7DC20 /* StaticLibTestLoader-Info.plist */,
+				8808187117572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.h */,
+				8808187217572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m */,
+				8808187317572F3900F7DC20 /* StaticLibTestLoaderMain.m */,
+			);
+			name = TestLoader;
+			path = ../StaticLibTestLoader;
+			sourceTree = "<group>";
+		};
+		8808187D17572F6C00F7DC20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88724928177E72CF009EB8CB /* StaticLibTests-Prefix.pch */,
+				8808187817572F5000F7DC20 /* StaticLibTests-Info.plist */,
+			);
+			name = Resources;
+			path = ../resources;
+			sourceTree = "<group>";
+		};
+		883A27C6168109C800F2AD59 = {
+			isa = PBXGroup;
+			children = (
+				883A285716810FE900F2AD59 /* StaticLib.h */,
+				883A280E16810B0A00F2AD59 /* Source */,
+				883A27F9168109FA00F2AD59 /* Resources */,
+				883A280D16810B0000F2AD59 /* Configuration */,
+				8808182217572BBA00F7DC20 /* Tests */,
+				8808182F17572C7200F7DC20 /* Vendor */,
+				8808185517572D9900F7DC20 /* Frameworks */,
+				883A27D2168109C900F2AD59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		883A27D2168109C900F2AD59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				883A27F6168109FA00F2AD59 /* libStaticLib.a */,
+				8808181A17572BBA00F7DC20 /* StaticLibTests.octest */,
+				8808185417572D9900F7DC20 /* StaticLibTestLoader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		883A27F9168109FA00F2AD59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				883A27FA168109FA00F2AD59 /* StaticLib-Prefix.pch */,
+				8808185C17572D9900F7DC20 /* TestLoader */,
+			);
+			name = Resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		883A280D16810B0000F2AD59 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				883A281316810B4F00F2AD59 /* Project */,
+				883A281216810B4200F2AD59 /* Target */,
+			);
+			name = Configuration;
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		883A280E16810B0A00F2AD59 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				883A28CD1681140100F2AD59 /* StaticLibObject.h */,
+				883A28CE1681140100F2AD59 /* StaticLibObject.m */,
+			);
+			name = Source;
+			path = src;
+			sourceTree = "<group>";
+		};
+		883A281216810B4200F2AD59 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				883A281716810BFF00F2AD59 /* Shared.xcconfig */,
+				883A281816810BFF00F2AD59 /* StaticLib.xcconfig */,
+				8808183D17572D2700F7DC20 /* StaticLibTests.xcconfig */,
+				8808187E17572F8900F7DC20 /* StaticLibTestLoader.xcconfig */,
+			);
+			name = Target;
+			sourceTree = "<group>";
+		};
+		883A281316810B4F00F2AD59 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				883A281416810BFF00F2AD59 /* Debug.xcconfig */,
+				883A281616810BFF00F2AD59 /* Release.xcconfig */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		8872492A177E74CA009EB8CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88724931177E74CA009EB8CB /* libKiwi.a */,
+				88724933177E74CA009EB8CB /* libKiwi-OSX.a */,
+				88724935177E74CA009EB8CB /* KiwiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		883A280F16810B1F00F2AD59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883A285816810FE900F2AD59 /* StaticLib.h in Headers */,
+				883A28CF1681140100F2AD59 /* StaticLibObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8808181917572BBA00F7DC20 /* StaticLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8808182C17572BBB00F7DC20 /* Build configuration list for PBXNativeTarget "StaticLibTests" */;
+			buildPhases = (
+				8808181517572BBA00F7DC20 /* Sources */,
+				8808181617572BBA00F7DC20 /* Frameworks */,
+				8808181717572BBA00F7DC20 /* Resources */,
+				8808181817572BBA00F7DC20 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88ECE6C7175736640024256F /* PBXTargetDependency */,
+				88ECE6C4175736500024256F /* PBXTargetDependency */,
+			);
+			name = StaticLibTests;
+			productName = StaticLibTests;
+			productReference = 8808181A17572BBA00F7DC20 /* StaticLibTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8808185317572D9900F7DC20 /* StaticLibTestLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8808186E17572D9900F7DC20 /* Build configuration list for PBXNativeTarget "StaticLibTestLoader" */;
+			buildPhases = (
+				8808185017572D9900F7DC20 /* Sources */,
+				8808185117572D9900F7DC20 /* Frameworks */,
+				8808185217572D9900F7DC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticLibTestLoader;
+			productName = StaticLibTestLoader;
+			productReference = 8808185417572D9900F7DC20 /* StaticLibTestLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		883A27F5168109FA00F2AD59 /* StaticLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883A27FF168109FA00F2AD59 /* Build configuration list for PBXNativeTarget "StaticLib" */;
+			buildPhases = (
+				883A27F2168109FA00F2AD59 /* Sources */,
+				883A27F3168109FA00F2AD59 /* Frameworks */,
+				883A280F16810B1F00F2AD59 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88724937177E74F3009EB8CB /* PBXTargetDependency */,
+			);
+			name = StaticLib;
+			productName = StaticLib;
+			productReference = 883A27F6168109FA00F2AD59 /* libStaticLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883A27C8168109C800F2AD59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = JCMultimedia;
+			};
+			buildConfigurationList = 883A27CB168109C800F2AD59 /* Build configuration list for PBXProject "StaticLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 883A27C6168109C800F2AD59;
+			productRefGroup = 883A27D2168109C900F2AD59 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8872492A177E74CA009EB8CB /* Products */;
+					ProjectRef = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				883A27F5168109FA00F2AD59 /* StaticLib */,
+				8808181917572BBA00F7DC20 /* StaticLibTests */,
+				8808185317572D9900F7DC20 /* StaticLibTestLoader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		88724931177E74CA009EB8CB /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = 88724930177E74CA009EB8CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88724933177E74CA009EB8CB /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = 88724932177E74CA009EB8CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88724935177E74CA009EB8CB /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = 88724934177E74CA009EB8CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8808181717572BBA00F7DC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8808185217572D9900F7DC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8808181817572BBA00F7DC20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8808181517572BBA00F7DC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8808187C17572F6000F7DC20 /* StaticLibTestSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8808185017572D9900F7DC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8808187417572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m in Sources */,
+				8808187517572F3900F7DC20 /* StaticLibTestLoaderMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883A27F2168109FA00F2AD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883A28D01681140100F2AD59 /* StaticLibObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88724937177E74F3009EB8CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kiwi;
+			targetProxy = 88724936177E74F3009EB8CB /* PBXContainerItemProxy */;
+		};
+		88ECE6C4175736500024256F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8808185317572D9900F7DC20 /* StaticLibTestLoader */;
+			targetProxy = 88ECE6C3175736500024256F /* PBXContainerItemProxy */;
+		};
+		88ECE6C7175736640024256F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 883A27F5168109FA00F2AD59 /* StaticLib */;
+			targetProxy = 88ECE6C6175736640024256F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8808182D17572BBB00F7DC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8808183D17572D2700F7DC20 /* StaticLibTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8808182E17572BBB00F7DC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8808183D17572D2700F7DC20 /* StaticLibTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		8808186F17572D9900F7DC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8808187E17572F8900F7DC20 /* StaticLibTestLoader.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8808187017572D9900F7DC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8808187E17572F8900F7DC20 /* StaticLibTestLoader.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		883A27ED168109C900F2AD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883A281416810BFF00F2AD59 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		883A27EE168109C900F2AD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883A281616810BFF00F2AD59 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		883A2800168109FA00F2AD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883A281816810BFF00F2AD59 /* StaticLib.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		883A2801168109FA00F2AD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883A281816810BFF00F2AD59 /* StaticLib.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8808182C17572BBB00F7DC20 /* Build configuration list for PBXNativeTarget "StaticLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8808182D17572BBB00F7DC20 /* Debug */,
+				8808182E17572BBB00F7DC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8808186E17572D9900F7DC20 /* Build configuration list for PBXNativeTarget "StaticLibTestLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8808186F17572D9900F7DC20 /* Debug */,
+				8808187017572D9900F7DC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883A27CB168109C800F2AD59 /* Build configuration list for PBXProject "StaticLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883A27ED168109C900F2AD59 /* Debug */,
+				883A27EE168109C900F2AD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883A27FF168109FA00F2AD59 /* Build configuration list for PBXNativeTarget "StaticLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883A2800168109FA00F2AD59 /* Debug */,
+				883A2801168109FA00F2AD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 883A27C8168109C800F2AD59 /* Project object */;
+}

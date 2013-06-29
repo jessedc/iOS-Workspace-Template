@@ -1,0 +1,4 @@
+
+#include "../configuration/Common-Debug.xcconfig"
+
+JCMM_STATIC_LIB_GCC_PREPROCESSOR_DEFINITIONS = 

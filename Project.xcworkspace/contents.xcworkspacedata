@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "container:common/configuration"
+      location = "container:configuration"
       name = "Configuration">
       <FileRef
          location = "group:Common-CompilerAndLanguage.xcconfig">
@@ -28,9 +28,9 @@
       </Group>
    </Group>
    <FileRef
-      location = "group:apps/iosapp/iosapp.xcodeproj">
+      location = "group:iosapp/iosapp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:common/StaticLib/StaticLib.xcodeproj">
+      location = "group:StaticLib/StaticLib.xcodeproj">
    </FileRef>
 </Workspace>

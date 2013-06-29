@@ -95,13 +95,13 @@
 		883A27F6168109FA00F2AD59 /* libStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		883A27FA168109FA00F2AD59 /* StaticLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLib-Prefix.pch"; sourceTree = "<group>"; };
 		883A281416810BFF00F2AD59 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		883A281516810BFF00F2AD59 /* HeadersAndLibraries.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HeadersAndLibraries.xcconfig; sourceTree = "<group>"; };
 		883A281616810BFF00F2AD59 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		883A281716810BFF00F2AD59 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		883A281816810BFF00F2AD59 /* StaticLib.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLib.xcconfig; sourceTree = "<group>"; };
 		883A285716810FE900F2AD59 /* StaticLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticLib.h; path = src/StaticLib.h; sourceTree = "<group>"; };
 		883A28CD1681140100F2AD59 /* StaticLibObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticLibObject.h; sourceTree = "<group>"; };
 		883A28CE1681140100F2AD59 /* StaticLibObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticLibObject.m; sourceTree = "<group>"; };
+		88724928177E72CF009EB8CB /* StaticLibTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StaticLibTests-Prefix.pch"; path = "tests/StaticLibTests-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 		8808182217572BBA00F7DC20 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8808187D17572F6C00F7DC20 /* Resources */,
 				8808187B17572F6000F7DC20 /* StaticLibTestSpec.m */,
+				8808187D17572F6C00F7DC20 /* Resources */,
 			);
 			name = Tests;
 			path = tests;
@@ -187,6 +187,7 @@
 		8808187D17572F6C00F7DC20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				88724928177E72CF009EB8CB /* StaticLibTests-Prefix.pch */,
 				8808187817572F5000F7DC20 /* StaticLibTests-Info.plist */,
 			);
 			name = Resources;
@@ -250,7 +251,6 @@
 		883A281216810B4200F2AD59 /* Target */ = {
 			isa = PBXGroup;
 			children = (
-				883A281516810BFF00F2AD59 /* HeadersAndLibraries.xcconfig */,
 				883A281716810BFF00F2AD59 /* Shared.xcconfig */,
 				883A281816810BFF00F2AD59 /* StaticLib.xcconfig */,
 				8808183D17572D2700F7DC20 /* StaticLibTests.xcconfig */,

@@ -1,11 +1,15 @@
 
-#include "HeadersAndLibraries.xcconfig"
+JCMM_LIBSROOT = $(SRCROOT)/../../lib
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(JCMM_UNITTEST_HEADER_SEARCH_PATHS)
+HEADER_SEARCH_PATHS = $(inherited)
+LIBRARY_SEARCH_PATHS = $(inherited)
+
 
 GCC_PREFIX_HEADER = resources/StaticLib-Prefix.pch
 
 PRODUCT_NAME = $(TARGET_NAME)
 
-//Fix up some warnings
 WARNING_CFLAGS = $(inherited) -Wno-unused-parameter
 
 JCMM_STATIC_LIB_GCC_PREPROCESSOR_DEFINITIONS = $(inherited)

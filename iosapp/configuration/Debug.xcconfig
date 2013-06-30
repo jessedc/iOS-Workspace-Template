@@ -1,2 +1,2 @@
 
-#include "../../common/configuration/Common-Debug.xcconfig"
+#include "../configuration/Common-Debug.xcconfig"

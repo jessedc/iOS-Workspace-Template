@@ -1,2 +1,2 @@
 
-#include "../../common/configuration/Common-Release.xcconfig"
+#include "../configuration/Common-Release.xcconfig"

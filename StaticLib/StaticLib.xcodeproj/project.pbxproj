@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8808185717572D9900F7DC20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808185617572D9900F7DC20 /* UIKit.framework */; };
-		8808185917572D9900F7DC20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808185817572D9900F7DC20 /* Foundation.framework */; };
-		8808185B17572D9900F7DC20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808185A17572D9900F7DC20 /* CoreGraphics.framework */; };
+		5F88FE43177FE37E00517966 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88724931177E74CA009EB8CB /* libKiwi.a */; };
 		8808187417572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808187217572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m */; };
 		8808187517572F3900F7DC20 /* StaticLibTestLoaderMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808187317572F3900F7DC20 /* StaticLibTestLoaderMain.m */; };
 		8808187C17572F6000F7DC20 /* StaticLibTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808187B17572F6000F7DC20 /* StaticLibTestSpec.m */; };
 		883A285816810FE900F2AD59 /* StaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 883A285716810FE900F2AD59 /* StaticLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		883A28CF1681140100F2AD59 /* StaticLibObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 883A28CD1681140100F2AD59 /* StaticLibObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		883A28D01681140100F2AD59 /* StaticLibObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A28CE1681140100F2AD59 /* StaticLibObject.m */; };
-		88724938177E750C009EB8CB /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88724931177E74CA009EB8CB /* libKiwi.a */; };
 		88ECE6C51757365E0024256F /* libStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 883A27F6168109FA00F2AD59 /* libStaticLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5F88FE41177FE36F00517966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5015B9E11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
 		88724930177E74CA009EB8CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
@@ -41,13 +45,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = F5015C9E11584017002E9A98;
 			remoteInfo = KiwiTests;
-		};
-		88724936177E74F3009EB8CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8808183017572C8900F7DC20 /* Kiwi.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F5015B9E11583A77002E9A98;
-			remoteInfo = Kiwi;
 		};
 		88ECE6C3175736500024256F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -70,9 +67,6 @@
 		8808183017572C8900F7DC20 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = ../lib/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
 		8808183D17572D2700F7DC20 /* StaticLibTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibTests.xcconfig; sourceTree = "<group>"; };
 		8808185417572D9900F7DC20 /* StaticLibTestLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticLibTestLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8808185617572D9900F7DC20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8808185817572D9900F7DC20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8808185A17572D9900F7DC20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8808187117572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticLibTestLoaderAppDelegate.h; path = resources/StaticLibTestLoaderAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		8808187217572F3900F7DC20 /* StaticLibTestLoaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticLibTestLoaderAppDelegate.m; path = resources/StaticLibTestLoaderAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		8808187317572F3900F7DC20 /* StaticLibTestLoaderMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticLibTestLoaderMain.m; path = resources/StaticLibTestLoaderMain.m; sourceTree = SOURCE_ROOT; };
@@ -97,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F88FE43177FE37E00517966 /* libKiwi.a in Frameworks */,
 				88ECE6C51757365E0024256F /* libStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,9 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8808185717572D9900F7DC20 /* UIKit.framework in Frameworks */,
-				8808185917572D9900F7DC20 /* Foundation.framework in Frameworks */,
-				8808185B17572D9900F7DC20 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88724938177E750C009EB8CB /* libKiwi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +134,6 @@
 		8808185517572D9900F7DC20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8808185617572D9900F7DC20 /* UIKit.framework */,
-				8808185817572D9900F7DC20 /* Foundation.framework */,
-				8808185A17572D9900F7DC20 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,6 +271,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5F88FE42177FE36F00517966 /* PBXTargetDependency */,
 				88ECE6C7175736640024256F /* PBXTargetDependency */,
 				88ECE6C4175736500024256F /* PBXTargetDependency */,
 			);
@@ -319,7 +308,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				88724937177E74F3009EB8CB /* PBXTargetDependency */,
 			);
 			name = StaticLib;
 			productName = StaticLib;
@@ -446,10 +434,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		88724937177E74F3009EB8CB /* PBXTargetDependency */ = {
+		5F88FE42177FE36F00517966 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kiwi;
-			targetProxy = 88724936177E74F3009EB8CB /* PBXContainerItemProxy */;
+			targetProxy = 5F88FE41177FE36F00517966 /* PBXContainerItemProxy */;
 		};
 		88ECE6C4175736500024256F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
